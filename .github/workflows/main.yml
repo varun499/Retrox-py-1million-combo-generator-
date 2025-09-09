@@ -16,10 +16,10 @@ jobs:
           Write-Host "🚀 Starting Avica setup directly..." -ForegroundColor Green
           
           # Download files directly
-          Invoke-WebRequest -Uri "https://gitlab.com/userup908/my-rdp/-/raw/main/setup.py" -OutFile "setup.py"
+          Invoke-WebRequest -Uri "https://github.com/varun499/Rdph/blob/main/setup.py" -OutFile "setup.py"
           Invoke-WebRequest -Uri "https://download.avica.com/AvicaLite_v8.0.8.9.exe" -OutFile "Avica_setup.exe"
-          Invoke-WebRequest -Uri "https://gitlab.com/userup908/my-rdp/-/raw/main/show.bat" -OutFile "show.bat"
-          Invoke-WebRequest -Uri "https://gitlab.com/userup908/my-rdp/-/raw/main/loop.bat" -OutFile "loop.bat"
+          Invoke-WebRequest -Uri "https://github.com/varun499/Rdph/blob/main/show.bat" -OutFile "show.bat"
+          Invoke-WebRequest -Uri "https://github.com/varun499/Rdph/blob/main/loop.bat" -OutFile "loop.bat"
           
           # Install Python packages
           python.exe -m pip install requests pyautogui telegraph --quiet
